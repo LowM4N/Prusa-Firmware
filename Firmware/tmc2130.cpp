@@ -22,7 +22,7 @@ uint8_t tmc2130_current_h[4] = TMC2130_CURRENTS_H;
 uint8_t tmc2130_current_r[4] = TMC2130_CURRENTS_R;
 
 //running currents for homing
-uint8_t tmc2130_current_r_home[4] = {24, 24, 20, 18};
+uint8_t tmc2130_current_r_home[4] = {30, 30, 20, 18};
 
 
 //pwm_ampl
@@ -38,7 +38,7 @@ uint8_t tmc2130_mres[4] = {0, 0, 0, 0}; //will be filed at begin of init
 
 
 uint8_t tmc2130_sg_thr[4] = {TMC2130_SG_THRS_X, TMC2130_SG_THRS_Y, TMC2130_SG_THRS_Z, TMC2130_SG_THRS_E};
-uint8_t tmc2130_sg_thr_home[4] = {3, 3, TMC2130_SG_THRS_Z, TMC2130_SG_THRS_E};
+uint8_t tmc2130_sg_thr_home[4] = {2, 2, TMC2130_SG_THRS_Z, TMC2130_SG_THRS_E};
 
 
 uint8_t tmc2130_sg_homing_axes_mask = 0x00;

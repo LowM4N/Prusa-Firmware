@@ -255,8 +255,8 @@
 #define TMC2130_SG_THRS_E       3     // stallguard sensitivity for E axis (3)
 
 //new settings is possible for vsense = 1, running current value > 31 set vsense to zero and shift both currents by 1 bit right (Z axis only)
-#define TMC2130_CURRENTS_H {32, 32, 35, 30}  // default holding currents for all axes {16, 20, 35, 30}
-#define TMC2130_CURRENTS_R {32, 32, 35, 30}  // default running currents for all axes {16, 20, 35, 30}
+#define TMC2130_CURRENTS_H {32, 32, 35, 40}  // default holding currents for all axes {16, 20, 35, 30}
+#define TMC2130_CURRENTS_R {32, 32, 35, 40}  // default running currents for all axes {16, 20, 35, 30}
 #define TMC2130_UNLOAD_CURRENT_R 12			 // lowe current for M600 to protect filament sensor 
 
 #define TMC2130_STEALTH_Z
@@ -296,9 +296,9 @@
 //#define  DEFAULT_Kp 40.925
 //#define  DEFAULT_Ki 4.875
 //#define  DEFAULT_Kd 86.085
-#define  DEFAULT_Kp 18.56
-#define  DEFAULT_Ki 1.4
-#define  DEFAULT_Kd 61.52
+#define  DEFAULT_Kp 38.44
+#define  DEFAULT_Ki 6.96
+#define  DEFAULT_Kd 53.06
 #endif
 
 // Extrude mintemp
@@ -443,9 +443,9 @@
 #define  DEFAULT_bedKi 1.60
 #define  DEFAULT_bedKd 73.76
 #else
-#define  DEFAULT_bedKp 126.13
-#define  DEFAULT_bedKi 4.30
-#define  DEFAULT_bedKd 924.76
+#define  DEFAULT_bedKp 110.65
+#define  DEFAULT_bedKi 4.91
+#define  DEFAULT_bedKd 623.58
 #endif
 
 //120v 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
@@ -572,8 +572,8 @@
 #define PINDA_PREHEAT_Z 1*/
 #define PINDA_HEAT_T 120 //time in s
 
-#define PINDA_MIN_T 50
-#define PINDA_STEP_T 10
+#define PINDA_MIN_T 35
+#define PINDA_STEP_T 5
 #define PINDA_MAX_T 100
 
 #define PING_TIME 60 //time in s
